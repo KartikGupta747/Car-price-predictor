@@ -33,4 +33,4 @@ input_df=pd.DataFrame([[name,company,year,distance,fule]],columns=['name','compa
 
 if st.button('Predict Selling Price'):
     prediction=model.predict(input_df)
-    st.success(f"Estimated Selling Price: ₹{round(prediction[0], 2)} lakh")
+    st.success(f"Estimated Selling Price: ₹{round(prediction[0], 2)}")
